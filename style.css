@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(169, 166, 166) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 2000px;
+    height:100vh;
+    transform: translate(-5%,-10%);
+}
+.cube {
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: rotatey(60deg);
+    right:35px;
+    top:25px;
+  }
+  .cube2 {
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left:173px;
+    transform:translatex(-50px);
+  }
+  .cube2 .face1{
+    position:absolute;
+    width:200px;
+    height:200px;
+    line-height:200px;
+    text-align:center;
+    font-size: 44px;
+}
+.face1.front{
+    background: url('https://tse3.mm.bing.net/th?id=OIP.vOpkcVQyM83rINVGmlW6GgHaE-&pid=Api&P=0&h=180');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:230px;
+    width:343px;
+    background-color:white;
+    transform: rotatey(-35deg) translatex(2px) translatey(-30px) translatez(50px);
+}
+.face1.right{
+    /* background: url('https://tse3.mm.bing.net/th?id=OIP.aapqoC-VoPWKbgOweqnpxgHaFj&pid=Api&P=0&h=180');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    background: url('https://tse3.mm.bing.net/th?id=OIP.vOpkcVQyM83rINVGmlW6GgHaE-&pid=Api&P=0&h=180');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: pink;
+    width:273px;
+    transform: rotatey(65deg) translatex(11px) translateZ(63px);
+    left:145px;
+}
+.face1.left{
+    /* background: url('https://tse2.mm.bing.net/th?id=OIP.G_DBPAyJIyLl8IJPjKpyKQHaFa&pid=Api&P=0&h=180'); */
+    background: url('https://tse2.mm.bing.net/th?id=OIP.JBx8y5pYspu2ReU9lvpBMQHaFz&pid=Api&P=0&h=180');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color:pink;
+    width:273px;
+    transform: rotatey(65deg) translateX(228px)   translateZ(71px);
+    
+    left:-230px;
+}
+
+.face1.back{
+    background: url('https://tse3.mm.bing.net/th?id=OIP.vOpkcVQyM83rINVGmlW6GgHaE-&pid=Api&P=0&h=180');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:230px;
+    width:338px;
+    background-color:white;
+    transform: rotatey(145deg) translatex(40px)
+    translatey(-30px) translatez(220px);
+}
+.face1.top{
+    height:267px;
+    width:340px;
+    background-color:pink;
+    transform:rotatex(90deg)   rotatez(35deg) translatex(-19px) translatey(-84px) skew(10deg) translatez(115px);
+}
+.face1.bottom{
+    height:270px;
+    width:341px;
+    background-color:rgb(179, 157, 157);
+    transform:rotatex(90deg)   rotatez(35deg) translatex(-19px) translatey(-85px) skew(10deg) translatez(-65px);
+    
+}
+
+
+.ground{
+    height:200px;
+    width:200px;
+    transform-style: preserve-3d;
+    animation:house 15s linear infinite;
+    transform:rotatey(-10deg);
+    transform:rotatex(-10deg);
+}
+.ground .face{
+    position:absolute;
+    width:200px;
+    height:200px;
+    line-height:200px;
+    text-align:center;
+    font-size: 44px;
+}
+.faces{
+    position:absolute;
+    width:200px;
+    height:200px;
+    line-height:200px;
+    text-align:center;
+    font-size: 44px;
+}
+.face.front{
+   background: url('https://tse3.mm.bing.net/th?id=OIP.vOpkcVQyM83rINVGmlW6GgHaE-&pid=Api&P=0&h=180');
+   background-repeat: no-repeat;
+   width:300px;
+   background-position: center;
+    width:343px;
+    background-color:rgb(255, 255, 255);
+    transform: rotatey(-35deg) translatex(2px) translatez(50px);
+}
+.face.right{
+    /* background: url('https://tse1.mm.bing.net/th?id=OIP.UWWxbFnlIfPYbz_sagfHzQHaHa&pid=Api&P=0&h=180'); */
+    background: url('https://tse2.mm.bing.net/th?id=OIP.f9lR2cFWpdp70WjfopI2WwHaI4&pid=Api&P=0&h=180');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-color: rgb(237, 232, 232);
+    width:233px;
+    transform: rotatey(65deg) translateZ(81px);
+    left:145px;
+}
+.face.left{
+    background: url('https://i5.walmartimages.com/asr/f32bfc14-cd9c-4cef-ab93-c2f145d9be4b_1.4c7dfc37fb518901e3675b844cddf7b8.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff');
+    background-size: cover;
+    background-position: center;
+    background-color:pink;
+    width:233px;
+    transform: rotatey(65deg) translateX(218px)  translateZ(82px);
+    
+    left:-230px;
+}
+
+.face.back{
+    background: url('https://tse1.mm.bing.net/th?id=OIP.-lxWysVQVLq-rQbqRsCvLAHaHa&pid=Api&P=0&h=180');
+   background-repeat: no-repeat;
+   width:300px;
+   
+   background-position: center;
+    width:345px;
+    background-color:white;
+    transform: rotatey(145deg) translatex(40px) translatez(180px);
+}
+.face.top{
+    height:230px;
+    width:345px;
+    background-color:rgb(179, 157, 157);
+    transform:rotatex(90deg)   rotatez(35deg) translatex(-19px) translatey(-64px) skew(10deg) translatez(115px);
+}
+.face.bottom{
+    height:230px;
+    width:345px;
+    background-color:rgb(179, 157, 157);
+    transform:rotatex(90deg)   rotatez(35deg) translatex(-19px) translatey(-65px) skew(10deg) translatez(-85px);
+    
+}
+
+.faces.top {
+    background-color: white;
+    transform: rotateX(90deg) translateZ(100px);
+  }
+  .faces.bottom {
+    background-color: rgb(179, 157, 157);
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+  
+  .faces.right {
+    background-color:white;
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  .faces.left {
+    background: url('https://tse4.mm.bing.net/th?id=OIP.QbThy1Xoxb0bC5vkYdRjPgHaHu&pid=Api&P=0&h=180');
+    background-size: cover;
+    background-position: center;
+    background-color:white;
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+  
+  .faces.front {
+    /* background: url('https://tse3.mm.bing.net/th?id=OIP.vOpkcVQyM83rINVGmlW6GgHaE-&pid=Api&P=0&h=180');
+    background-size: cover;
+    background-position: center; */
+    background: url('https://tse2.mm.bing.net/th?id=OIP.G_DBPAyJIyLl8IJPjKpyKQHaFa&pid=Api&P=0&h=180');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: pink;
+    transform: rotateX(0deg) translateZ(100px);
+  }
+  .faces.back {
+    background: url('https://tse1.mm.bing.net/th?id=OIP.n3q2aaovybv6b2cObnqZZAHaHa&pid=Api&P=0&h=180');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: pink;
+    transform: rotateX(-180deg) translateZ(100px);
+  }
+  
+@keyframes house {
+    from{
+        /* transform:rotatex(0) rotatey(0) rotatez(0); */
+        transform: rotatey(0);
+    }
+    to{
+        /* transform:rotatex(360deg) rotatey(360deg) rotatez(360deg); */
+        transform:rotatey(-360deg);
+        
+    }
+}
